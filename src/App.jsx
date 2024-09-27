@@ -5,6 +5,7 @@ function App() {
 
   return (
     <>
+      <header id='header'>Memory Game</header>
     </>
   )
 }
