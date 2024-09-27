@@ -14,7 +14,13 @@ function App() {
       <header id='header'>Memory Game
         <ScoreDisplay currentScore={currentScore} bestScore={bestScore} />
       </header>
-      <GameDisplay key={round} round={round} currentScore={currentScore} bestScore={bestScore} setRound={setRound} setCurrentScore={setCurrentScore} setBestScore={setBestScore} />
+      <GameDisplay key={round}
+        round={round}
+        currentScore={currentScore}
+        bestScore={bestScore}
+        setRound={setRound}
+        setCurrentScore={setCurrentScore}
+        setBestScore={setBestScore} />
     </>
   )
 }
