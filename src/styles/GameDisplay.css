@@ -1,0 +1,14 @@
+#game-display {
+  height: 90%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+}
