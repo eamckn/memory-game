@@ -8,4 +8,8 @@
 
   padding: 1rem;
   gap: 1rem;
+
+  background-image: url("../assets/amegakure.gif");
+  background-size: cover;
+  background-position: center;
 }
