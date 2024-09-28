@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import Card from './Card'
-import '../styles/utility.css'
 import '../styles/GameDisplay.css'
 import '../styles/fonts.css'
 
