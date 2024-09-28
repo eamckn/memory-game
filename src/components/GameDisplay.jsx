@@ -24,7 +24,7 @@ export default function GameDisplay({ round,
     setBestScore,
     setRound }) {
     
-    const [init, setInit] = useState(false);
+    //const [init, setInit] = useState(false);
     const [cardInfo, setCardInfo] = useState([])
 
     const randomizeCards = (array = cardInfo) => {
@@ -71,10 +71,9 @@ export default function GameDisplay({ round,
     //     }
     // }
 
-    // if (!init) {
-    //     randomizeCards();
-    //     setInit(!init);
-    // }
+    if (cardInfo.length !== 0) {
+        randomizeCards();
+    }
 
     useEffect(() => {
     async function getData() {
@@ -96,7 +95,7 @@ export default function GameDisplay({ round,
             console.error(error.message)
         }
     }
-    getData()
+    getData();
 }, []);
 
 
