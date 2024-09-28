@@ -1,5 +1,6 @@
 import { useState } from "react";
 import '../styles/Card.css'
+import '../styles/fonts.css'
 
 export default function Card({ round,
     currentScore,

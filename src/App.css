@@ -20,7 +20,8 @@ body {
   align-items: center;
 
   height: 10%;
-  background-color: grey;
+  background-color: red;
+  color: black;
 
   gap: 20%;
 }

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import ScoreDisplay from './components/ScoreDisplay';
 import GameDisplay from './components/GameDisplay';
 import './App.css'
+import './styles/fonts.css'
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <>
-      <header id='header'>Memory Game
+      <header id='header'>Akatsuki Memory Game
         <ScoreDisplay currentScore={currentScore} bestScore={bestScore} />
       </header>
       <GameDisplay key={round}
