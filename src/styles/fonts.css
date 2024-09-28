@@ -32,3 +32,8 @@
 #score-display p {
   font-size: 1rem;
 }
+
+#loading {
+  font-family: "yozakura";
+  font-size: 3rem;
+}
