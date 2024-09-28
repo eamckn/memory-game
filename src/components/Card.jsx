@@ -30,7 +30,9 @@ export default function Card({ round,
     return (
         <div className="card"
             onClick={handleClick}>
-            <img src={url} />
+            <div className="img-wrapper">
+                <img src={url} />
+            </div>
             <p>{name}</p>
         </div>
     )
