@@ -17,7 +17,7 @@
 }
 
 .img-wrapper {
-  width: 100%;
+  width: 80%;
   height: 80%;
 
   display: flex;
@@ -29,6 +29,6 @@
 }
 
 img {
-  width: auto;
   height: 100%;
+  width: auto;
 }
