@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Card from './Card'
 import '../styles/utility.css'
 import '../styles/GameDisplay.css'
+import '../styles/fonts.css'
 
 
 export default function GameDisplay({ round,
@@ -52,7 +53,9 @@ export default function GameDisplay({ round,
             ))
             akatuski = filterAkastuki(akatuski)
             console.log(akatuski)
-            setCardInfo(akatuski);
+            setTimeout(() => {
+                setCardInfo(akatuski);
+            }, 500);
         } 
         catch (error){
             console.error(error.message)
@@ -63,7 +66,9 @@ export default function GameDisplay({ round,
 
 
     if (!cardInfo.length) {
-        return <div id="loading">Loading</div>  
+        return <div id="game-display">
+                    <div id="loading">Loading</div>
+                </div>
     } else {
         return <div id="game-display">
             {console.log(cardInfo)}
