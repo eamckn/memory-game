@@ -1,6 +1,7 @@
 import { useState } from "react";
 import '../styles/Card.css'
 import '../styles/fonts.css'
+import '../styles/animations.css'
 
 export default function Card({ round,
     currentScore,
@@ -29,7 +30,7 @@ export default function Card({ round,
     }
 
     return (
-        <div className="card"
+        <div className="card grow"
             onClick={handleClick}>
             <div className="img-wrapper">
                 <img src={url} />
